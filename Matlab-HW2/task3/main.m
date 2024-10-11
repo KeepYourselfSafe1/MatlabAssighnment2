@@ -10,6 +10,7 @@ fileID = fopen('weather.txt', 'w');
 fprintf(fileID, '%s %s %s %s\n', 'date', 'temp', 'humid', 'rain');
 
 % Writes each day's data into weather.txt while also sticking to the headings
+
 days = {day1, day2, day3, day4, day5};
 for i = 1:length(days)
     fprintf(fileID, '%s %f %f %f\n', days{i}{1}, days{i}{2}, days{i}{3}, days{i}{4});
@@ -17,8 +18,7 @@ end
 
 fclose(fileID);
 
-% Display the written file
-type weather.txt
+% Display the written file weather.txt
 
 % Open file for reading
 fileID = fopen('weather.txt', 'r');
