@@ -46,5 +46,5 @@ ylabel('Distance from Sun (AU)');
 set(gca, 'XTickLabel', planet_names);  % Label bars with planet names
 grid on;
 
-% Save the figure as a png
+% Saves the figure as a png titled 'solar_system_visualization'.
 saveas(gcf, 'solar_system_visualization.png');
