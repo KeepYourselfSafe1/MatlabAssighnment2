@@ -56,4 +56,5 @@ fprintf(fileID, "Average Price: %f\n", Avg);
 fprintf(fileID, "Highest Price: %f\n", highValue);
 fprintf(fileID, "Lowest Price: %f\n", lowValue);
 fprintf(fileID, "Days of Gain: %d\n", daysUp);
+% closes file after writing all mentioned data above in stock_summary.txt
 fclose(fileID);
